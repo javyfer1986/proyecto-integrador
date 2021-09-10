@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>CRUD</title>
+<meta name="viewport"  charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+
+<body>
+    <h3> REGISTRO DE CLIENTES</h3>
+    <div class="container">
+    
+    <div >
+    <form>
+    
+    
+    <label for="cedula" class="form-label">CEDULA:</label>
+    <input type="number" placeholder="Ingrese su Cédula" class="form-control" id="cedula" maxlength="10">
+    
+    <label for="nombre" class="form-label" >NOMBRE:</label>
+    <input type="text" placeholder="Ingrese su Nombre"  class="form-control" id="nombre" maxlength="25">
+
+    <label for="apellido" class="form-label"> APELLIDO:</label>
+    <input type="text" placeholder="Ingrese su Apellido" class="form-control" id="apellido" maxlength="25">
+
+    <label for="email" class="form-label">EMAIL:</label>
+    <input type="text" placeholder="Ingrese su Correo" class="form-control" id="email" aria-describedby="emailHelp" maxlength="35"/>
+
+    <label for="edad" class="form-label" >EDAD:</label>
+    <input type="number" placeholder="Ingrese su Edad" class="form-control" id="edad" maxlength="2"/>
+
+    <label for="ciudad" class="form-label" >CIUDAD:</label>
+    <input type="text" placeholder="Ingrese su Ciudad" class="form-control" id="ciudad" maxlength="20"/>
+
+    <label for="telefono" class="form-label" >TELÉFONO:</label>
+    <input type="number" placeholder="Ingrese su Teléfono" class="form-control" id="telefono" maxlength="10"/>
+    <br>
+
+    <button type="button" onclick="crear(cedula.value,nombre.value,apellido.value,email.value,edad.value,
+    ciudad.value,telefono.value )" class="btn btn-primary"> CREAR </button>
+    <button type="button" onclick="actualizarClientes(cedula.value,nombre.value,apellido.value,email.value,edad.value,
+    ciudad.value,telefono.value )" class="btn btn-info"> ACTUALIZAR/MOSTRAR </button>
+    <button onclick=""><a class="btb btn-info" href="../../4_Pagina principal_/principal.html">INGRESAR</a></button>
+    
+    
+    </form>
+       
+    </div>
+    
+    <table class="table" border="1">
+        <tr>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>CEDULA</th>
+            <th>EMAIL</th>
+            <th>EDAD</th>
+            <th>CIUDAD</th>
+            <th>TELÉFONO</th>
+            <th></th>
+        </tr>
+        <tbody class="table table-borderer table-hover" id="listarClientesTabla"></tbody>
+    </table>
+    </div>
+    <footer class="footer">
+        <p class="copy">&copy; Nuestras paginas oficiales</p>
+        <p>Diseñado por:</P>
+        <P>Javier Pinta</p>
+        <p>Angelo Diaz</p> 
+      
+
+        <br></br>
+    </footer>
+    
+    <script type="text/javascript" src="js/form.html.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    
+    </body>
+    
+    </html>
