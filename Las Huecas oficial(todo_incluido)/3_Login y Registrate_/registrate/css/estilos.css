@@ -1,0 +1,51 @@
+body{
+	width:815px;
+	margin:0 auto;
+	background-color: #f2f2f2;
+	background-image: url(../img/univers.jpg);
+	 background-color: transparent;
+	 background-size: cover;
+	}
+
+h3{
+	text-align:center;
+	color:white;
+	}
+	
+form{
+	width:815px;
+}
+img{
+	width:40px;
+	height:20px;
+}
+label{
+	color:white;
+}
+table{
+	border-color: white;
+	color: white;
+}
+th{
+	color:rgb(190, 67, 67);	
+}
+tr{
+	color: #ffffff ;	
+}
+tbody {
+	color:red;
+	background-image: url(../img/univers.jpg);
+	background-size: cover;
+
+	
+}
+
+.footer{
+    background: rgba(85, 85, 85, 0.473);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    height: 285px ;
+	width: 1000px;
+}
+
